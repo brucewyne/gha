@@ -13,9 +13,14 @@ jobs:
       - name: Step 2
         run: echo "Why do you wear that stupid bunny suit?"
         
+      - name: Take your Time
+        run: sleep 15
+        
   job2:
     name: Job 2222
     runs-on: ubuntu-latest
+    needs:
+      - job1
     steps:
       - name: Step 1
         run: echo "Cellar door"
