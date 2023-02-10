@@ -30,4 +30,4 @@ jobs:
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2
         env:
-          SLACK_WEBHOOK: https://hooks.slack.com/services/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
+          SLACK_WEBHOOK: https://hooks.slack.com/services/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
