@@ -9,6 +9,10 @@ jobs:
       
       - name: Step 2
         run: echo "Why do you wear that stupid bunny suit?"
+        
+      - name: Take your Time
+        run: sleep 30
+        
   job2:
     runs-on: ubuntu-latest
     steps:
