@@ -8,6 +8,10 @@ jobs:
     name: Build Application
     runs-on: ubuntu-latest
     steps:
+      
+      - name: Checkout branch
+        uses: actions/checkout@v3
+    
       - name: Installing Package Dependencies
         run: yarn install
 
