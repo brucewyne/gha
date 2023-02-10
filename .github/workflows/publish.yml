@@ -1,0 +1,16 @@
+name: Build & Test
+
+on: workflow_dispatch
+
+jobs:
+  
+  build:
+    name: Build Application
+    runs-on: ubuntu-latest
+    steps:
+      - name: Installing Package Dependencies
+        run: yarn install
+
+      - name: Build Application
+        run: yarn build
+        
