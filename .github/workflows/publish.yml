@@ -21,3 +21,13 @@ jobs:
       - name: Build Application
         run: yarn build
         
+
+  notify:
+    needs:
+      - build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: https://hooks.slack.com/services/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
