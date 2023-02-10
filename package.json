@@ -1,0 +1,13 @@
+{
+  "name": "github-actions-lnl",
+  "version": "1.0.0",
+  "author": "Michael Grissinger",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "echo 'all done building'",
+    "start": "echo 'starting server'"
+  },
+  "dependencies": {
+    "react": "16.9.0"
+  }
+}
